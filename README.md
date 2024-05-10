@@ -6,6 +6,10 @@ This project is a QR code preprocessor and decoder implemented in Python using c
 
 ## Installation
 
+1. Clone the repository:
+   ````shell
+   git clone https://github.com/MinaGeo/CV-Project
+
 
 ## Usage
 
