@@ -6,6 +6,7 @@ This project is a QR code preprocessor and decoder implemented in Python using c
 - Reads QR codes provided it
 - Applies pre-processing techniques on the qr code to enhance image quality
 - Generic pre-processing is applied to the test cases
+- Extract the QR code and remove quite zones
 - Decodes the pre-processed QR code and print the decoded string
 - Decodes only Version 1 QR codes
 - Can decode alphanumeric encoded QR Codes
@@ -25,16 +26,14 @@ This project is a QR code preprocessor and decoder implemented in Python using c
 
    ````shell
    pip install opencv-python
-
-   ````shell
    pip install matplotlib
-
-   ````shell
    pip install --upgrade reedsolo
 	
 
 ## Usage
+1. Only works on QR Version 1.
 
+2. The program will pre-process the provided QR code, extract the QR code ; removing the quite zones, decodes it, and display the decoded string.
 
 ## Contributing
 
