@@ -10,7 +10,7 @@ This project is a QR code preprocessor and decoder implemented in Python using c
 - Decodes the pre-processed QR code and print the decoded string
 - Decodes only Version 1 QR codes
 - Can decode alphanumeric encoded QR Codes
-
+- Involves using reed solomon error correction technique to correct any missing data.
 ## Installation
 
 1. Clone the repository:
@@ -31,9 +31,9 @@ This project is a QR code preprocessor and decoder implemented in Python using c
 	
 
 ## Usage
-1. Only works on QR Version 1.
+- Only works on QR Version 1.
 
-2. The program will pre-process the provided QR code, extract the QR code ; removing the quite zones, decodes it, and display the decoded string.
+- The program will pre-process the provided QR code, extract the QR code ; removing the quite zones, decodes it, applies reed solomon error correction, and display the decoded string.
 
 ## Contributing
 
@@ -43,6 +43,10 @@ When contributing, please ensure that your code follows the existing coding styl
 
 ## Acknowledgments
 
+- The project was inspired by the challenge of preprocessing and decoding QR Codes using computer vision techniques.
+- The OpenCV library was used extensively for QR Code pre-processing and computer vision operations.
+- The decoder acts implemented manually by Eng/Ahmad Salama performs all necessary algorithm and techniques to extract important information from the QR code.
+- The reed solomon error correction technique was applied to retrieve any missing data bytes in the qr code.
 
 ## Contact
 
